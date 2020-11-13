@@ -197,20 +197,22 @@ h3 {
     text-decoration-line: none;
 }
 
-#menu {
-    vertical-align: middle;
+.nav-wrapper {
     text-align: center;
-    padding-left: 330px;
-    display: inline-block;
+}
+
+#menu {
     letter-spacing: 1px;
     font-weight: 700;
+    display: inline-block;
 }
 
 #social-menu {
-    vertical-align: middle;
-    text-align: center;
+    padding: 0;
+    margin: 0;
     display: inline-block;
-    float: right;
+    position: absolute;
+    right: 15px;
 }
 
 .navbar-in {
@@ -242,6 +244,12 @@ h3 {
 
 #menu .main-menu li.active a {
     color: #f4b301;
+}
+
+@media only screen and (max-width: 1070px) {
+    .social-icons li {
+        display: block;
+    }
 }
 
 /*====================================================================

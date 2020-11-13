@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--lang help to tell search engines & browsers that eng is used-->
+
+<head>
+    <!--required meta tags-->
+    <meta charset="utf-8">
+    <!--To tell browser which encode to use-->
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+    <!--directs browser to display internet explorer in IE edge mode-->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- required for responsive.On how to control dimensions & scaling.Also sets with of page same as screen width.And sets initial zoom level when page loaded
+        in browser-->
+
+    <!--title-->
+    <title>Shonil Dabreo</title>
+
+    <!--flaticon-web icon-->
+    <link rel="shortcut icon" href="img/flaticon.png" />
+
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/cssfamily=Roboto+Condensed:300,300i,400,400i,700,700i" rel="stylesheet">
+
+    <!--fontawesome include icons-->
+    <link rel="stylesheet" href="css/font-awesome/css/font-awesome.min.css">
+
+    <!--devicons-->
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" integrity="sha512-JW3fT0YTK7pT7w437SoX6GcW76jOZ6E0jGmrqBAcloC4GKT+njHOY4fX5KxJ9WfIXTkNrAF994525fAHp+KCxg==" crossorigin="anonymous" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/devicons/1.8.0/css/devicons.min.css" integrity="sha512-JW3fT0YTK7pT7w437SoX6GcW76jOZ6E0jGmrqBAcloC4GKT+njHOY4fX5KxJ9WfIXTkNrAF994525fAHp+KCxg==" crossorigin="anonymous">
+    </noscript>
+
+    <!--bootstrap-css-->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+
+    <!--animate CSS-->
+    <link rel="stylesheet" href="css/animate/animate.css">
+
+    <!--magnific-popup CSS-->
+    <link rel="stylesheet" href="css/magnific-popup/magnific-popup.css">
+
+    <!--owl carousel CSS (slider)-->
+    <link rel="stylesheet" href="css/owl-carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl-carousel/owl.theme.default.min.css">
+
+    <!--Style-css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-targets=".navbar-fixed-top" data-offset="65">
+
+    <!--header-->
+    <header>
+        <nav class="navbar navbar-fixed-top " role="navigation">
+            <!--for set of links-->
+            <!--navbar bootstrap class,(navbar-inverse=black),navbar-fixed-top for fixed on top (even if us scroll-->
+            <div class="container-fluid">
+                <!--this fluid class for full width -->
+                <div class="nav-wrapper">
+                    <div id="menu">
+                        <!--class="collapse navbar-collapse"-->
+                        <!--collapse and navar collapse for mobile-->
+                        <ul class="nav navbar-nav main-menu">
+                            <!--navbar-nav for ul wid links -->
+                            <!--nav for menu-->
+                            <li><a href="#home" class="men-hover">HOME</a></li>
+                            <li><a href="projects.html" title="view projects">PROJECTS</a></li>
+                            <li>
+                                <a href="#" class="head-logo"><img src="img/flaticon.png"><b>SHONIL DABREO</b>
+                                </a>
+                            </li>
+                            <li><a href="#about-me">ABOUT ME</a></li>
+                            <li><a href="contact.html">CONTACT </a></li>
+                        </ul>
+                    </div>
+                    <div id="social-menu">
+                        <ul class="social-icons">
+                            <li><a href="https://www.facebook.com/shonil.dabre" class="social-icon icon-white fai"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="mailto:dabreoshonil@gmail.com" class="social-icon icon-white gooi"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.instagram.com/dabreo_shonil/" class="social-icon icon-white insi"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://twitter.com/shonil24" class="social-icon icon-white twiti"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://in.linkedin.com/in/shonil-dabreo-125003161" class="social-icon icon-white linkin"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="https://github.com/shonil24" class="social-icon icon-white git"><i class="fa fa-github"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--Home-->
+    <!--section for represent achinaric section(here represents home section)-->
+    <section id="home">
+        <!--div use to group elements n format it in css and bg-parallax for background-->
+        <div id="home-cover" class="bg-parallax animated fadeIn">
+            <!--home-content box n inner used for aligning vertically in middle-->
+            <div id="home-content-box">
+                <div id="home-content-box-inner" class="text-center">
+                    <!--predefines class textcenter to align it in middle-->
+                    <div id="home-heading" class="animated zoomIn">
+                        <h3>Portfolio <br> <span id="head-2">Hi, My name is Shonil Dabreo</span></h3>
+                    </div>
+                    <div id="home-btn" class="animated zoomIn">
+                        <!--a link act as a button due to role as btn-->
+                        <a class="btn btn-general" href="projects.html" role="button" title="Explore">Explore</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Featured Projects-->
+    <section id="featuredprojects">
+        <div class="content-box">
+            <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
+                <!--use wow class for scroll anim and no need of anim class its in wow-->
+                <!--start as .5s and completes within 1s-->
+                <h3>Featured Projects</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="container">
+                <!--for 3 products-->
+                <div class="row wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                    <div class="col-md-4 ">
+                        <a href="projects-info/wil.html">
+                            <div class="project-content">
+                                <!--wrapper-->
+                                <!--img-respon class is predefined bootstrap class-->
+                                <div class="project-image">
+                                    <img src="img\project images\wil.png" class="img-responsive fix-image" alt="new project" href="img\project images\wil.png">
+                                </div>
+                                <div class="project-info text-center">
+                                    <h4 class="project-title">WIL Project</h4>
+                                    <h5 class="project-tags">Analysis | Visualization | Modelling</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="projects-info/ds2.html">
+                            <div class="project-content">
+                                <!--wrapper-->
+                                <!--img-respon class is predefined bootstrap class-->
+                                <div class="project-image">
+                                    <img src="img\project images\ds2.png" class="img-responsive fix-image" alt="new project" href="img\project images\ds2.png">
+                                </div>
+                                <div class="project-info text-center">
+                                    <h4 class="project-title">Practical Science A2</h4>
+                                    <h5 class="project-tags">Analysis | Visualization | Modelling</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a href="projects-info/ap.html">
+                            <div class="project-content">
+                                <!--wrapper-->
+                                <!--img-respon class is predefined bootstrap class-->
+                                <div class="project-image">
+                                    <img src="img\project images\ap.png" class="img-responsive fix-image" alt="new project" href="img\project images\ap.png">
+                                </div>
+                                <div class="project-info text-center">
+                                    <h4 class="project-title">Advanced Java</h4>
+                                    <h5 class="project-tags">Java</h5>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+    <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="skills">
+        <div class="content-box">
+            <div class="content-title wow fadeInDown" data-wow-duration="1s" data-wow-delay=".4s">
+                <!--use wow class for scroll anim and no need of anim class its in wow-->
+                <!--start as .5s and completes within 1s-->
+                <h3>SKILLS</h3>
+                <div class="content-title-underline"></div>
+            </div>
+            <div class="subheading mb-3 skills-heading">Key skills</div>
+            <ul class="skillpack wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Exploratory Data Analysis
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Visualization
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Predictive Modelling &amp; Evaluation
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Probability &amp; Statistics
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Design &amp; Software Engineering
+                </li>
+            </ul>
+            <!--NLP, Time series forecasting-->
+
+            <div class="subheading mb-3 skills-heading">Languages</div>
+            <ul class="skillpack wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                <li class="list-inline-item">
+                    <i class="devicons devicons-java"></i>
+                    Java
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-python"></i>
+                    Python
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    R
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-html5"></i>
+                    HTML5
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-css3"></i>
+                    CSS
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-javascript"></i>
+                    Javascript
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-php"></i>
+                    PHP
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-mysql"></i>
+                    SQL
+                </li>
+            </ul>
+
+            <div class="subheading mb-3 skills-heading">Tools</div>
+            <ul class="skillpack wow fadeInUp" data-wow-duration="1s" data-wow-delay=".4s">
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Eclipse
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-android"></i>
+                    Android Studio
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-python"></i>
+                    Python IDE
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Anaconda Jupyter Notebook
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    R Studio
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Brackets
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Xampp
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    SQLlite
+                </li>
+                <li class="list-inline-item">
+                    <i class="devicons devicons-terminal_badge"></i>
+                    Google Firebase
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!--about me-->
+    <section class="about-me" id="about-me">
+        <div class="container">
+            <div class="row about-me-holder">
+                <div class="col-lg-6 col-md-6 col-sm-6 about-me-text d-flex align-self-center">
+                    <div class="text-holder wow fadeInUp" data-wow-duration="1.5s">
+                        <h1>KNOW MORE <br> ABOUT ME</h1>
+                        <p>It&rsquo;s Shonil, Data Science Enthusiast. My passion is understanding the surrounding data by discovering patterns to solve real-life problems using Machine Learning and Artificial Intelligence. I love to code the logic to develop new tools for the benefit of the community. I will be free to assist you in your work. Stay connected with me&hellip;&hellip;&hellip;&hellip;😊
+                        </p>
+                        <a href="Resume.docx" class="download-cv hvr-icon-hang"> DOWNLOAD MY CV &nbsp;<i class="fa fa-arrow-circle-down"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-6 col-9 about-me-images wow fadeInUp" data-wow-duration="1.5s">
+                    <img class="img-fluid" src="img\Backrgound images\me.jpg" alt="about-me">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--copyrights-->
+    <div id="copyrightsscroll">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Copyrights &copy; 2020 Portfolio</p>
+                    <a href="#home" id="backtop" class="btn btn-sm  btn-backtop men-hover"><i class="fa fa-angle-up" title="home" role="button"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--jQuery-->
+    <script src="js/jquery.js"></script>
+
+    <!--jQuery 2.2.3-->
+    <script src="../js/jquery-2.2.3.min.js"></script>
+
+    <!--bootstrap-javascript-->
+    <script src="js/bootstap/bootstrap.min.js"></script>
+
+    <!--WOW js(for animation on scroll)-->
+    <script src="js/wow/wow.min.js"></script>
+
+    <!--jquery magnific popup js-->
+    <script src="js/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!--owl carousel JS-->
+    <script src="js/owl-carousel/owl.carousel.min.js"></script>
+
+    <!--easing-->
+    <script src="js/easing/jquery.easing.1.3.js"></script>
+
+    <!--Custom-js-->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

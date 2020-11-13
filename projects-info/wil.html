@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--title-->
+    <title>WIL | Portfolio</title>
+
+    <!--flaticon-web icon-->
+    <link rel="shortcut icon" href="../img/flaticon.png" />
+
+    <!--jquery js-->
+    <script src="js/jquery.js"></script>
+
+    <!--jQuery 2.2.3-->
+    <script src="../js/jquery-2.2.3.min.js"></script>
+
+    <script defer>
+        window.onload = function() {
+            $('#content').load("proj.html");
+        };
+    </script>
+    <style>
+        html,
+        body,
+        #content {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <!--defer will ensure scripts loaded in order but in this case it doesnt work
+    onload or query ready function or any other function didn't work
+    As a final resort, timer was set for dynamic loading of content after proj.html/css/js template is loaded.
+
+    proj.html executes after all tags are executed. Due to load function usage its necessary that onload function is used for all completion. THis just starts the execution but elements take time for loading
+    -->
+</body>
+<script defer>
+    setTimeout(function() {
+        var imageUrl = "../img/project%20images/wil.png";
+        $('#content #back-cover').css('background-image', 'url(' + imageUrl + ')');
+        $('#content #head-3').html("WIL Project");
+        $('#content #head-2').html("Analysing the impact of covid cases on GDP of different countries");
+        $('#content .project-title').html("WIL Project");
+        $('#content .proj-time').html("October 25, 2020");
+
+        $('#content #line1').html("The coronavirus had affected the global economy and GDP in a severe way. ");
+        $('#content #line2').html("Due to this circumstances, the businesses were shifting their units to other countries which weren't worst hit by the pandemic. To make a smart analyzed decision, we came up with a solution to help the businesses make an informed decision. ");
+        $('#content #line3').html("We analyzed the recovery rate of different countries. We also analyzed each countries GDP for the first two quarters of 2020 to give an estimate of countries financial condition. ");
+        $('#content #line4').html("With the results, we built a model to assist the owners for future estimation of GDP for different countries");
+        $('#content #line5').html("The results and successful model were to help businesses advance their business without much loss. ");
+
+        $('#content .p-image').attr("src", "../img/project images/wil.png");
+        $('#content .btn-git').attr("href", "https://github.com/shonil24/WIL-Project");
+        $('#content .btn-demo').attr("href", "#");
+    }, 1000);
+</script>
+
+</html>

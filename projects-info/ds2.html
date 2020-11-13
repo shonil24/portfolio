@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--title-->
+    <title>Practical Science A2 | Portfolio</title>
+
+    <!--flaticon-web icon-->
+    <link rel="shortcut icon" href="../img/flaticon.png" />
+
+    <!--jquery js-->
+    <script src="js/jquery.js"></script>
+
+    <!--jQuery 2.2.3-->
+    <script src="../js/jquery-2.2.3.min.js"></script>
+
+    <script defer>
+        window.onload = function() {
+            $('#content').load("proj.html");
+        };
+    </script>
+    <style>
+        html,
+        body,
+        #content {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <!--defer will ensure scripts loaded in order but in this case it doesnt work
+    onload or query ready function or any other function didn't work
+    As a final resort, timer was set for dynamic loading of content after proj.html/css/js template is loaded.
+
+    proj.html executes after all tags are executed. Due to load function usage its necessary that onload function is used for all completion. THis just starts the execution but elements take time for loading
+    -->
+</body>
+<script defer>
+    setTimeout(function() {
+        var imageUrl = "../img/project%20images/ds2.png";
+        $('#content #back-cover').css('background-image', 'url(' + imageUrl + ')');
+        $('#content #head-3').html("Practical Science A2");
+        $('#content #head-2').html("Analysis on mice dataset");
+        $('#content .project-title').html("Practical Science A2");
+        $('#content .proj-time').html("June 10, 2020");
+
+        $('#content #line1').html("The aim is to understand which trisomy protein classes that contribute to the success and the failure of mice learning.");
+        $('#content #line2').html("Analysis is conducted by creating a model which predicts the 8 classes of mice based on their protein expression levels. ");
+        $('#content #line3').html("We can then decide which proteins were significant in the predictions i.e. support a hypothesis where we could say that a particular protein might affect learning in trisomic mice. ");
+        $('#content #line4').css("list-style", "none");
+        $('#content #line5').css("list-style", "none");
+
+        $('#content .p-image').attr("src", "../img/project images/ds2.png");
+        $('#content .btn-git').attr("href", "https://github.com/shonil24/Practical-Science-A2");
+        $('#content .btn-demo').attr("href", "#");
+    }, 1000);
+</script>
+
+</html>

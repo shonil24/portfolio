@@ -1,0 +1,410 @@
+/*General CSS*/
+
+html,
+body {
+    /*parent so height here 1st*/
+    height: 100%;
+}
+
+body {
+    font-family: "Roboto Condensed", sans-serif;
+    position: relative;
+}
+
+h3 {
+    text-transform: uppercase;
+    /*for all h3 tags*/
+}
+
+/*=================================================
+                    WHOLE FOOTER
+==================================================*/
+
+#copyrightsscroll {
+    background-color: #3a3f43;
+    /*bgc+tab emmets shortcut*/
+    padding: 12px 0;
+    /*p:30-0 + tab for shortcut */
+    color: #fff;
+}
+
+#copyrightsscroll .container {
+    text-align: center;
+    vertical-align: middle;
+}
+
+/*========================================
+                Social Icons
+=========================================*/
+
+.social-icons {
+    margin: 0 0;
+    padding: 10px 0;
+    /*top margin */
+    display: inline-block;
+    /*brimging besides header 4*/
+}
+
+.social-icons li {
+    list-style-type: none;
+    display: inline-block;
+    /* bringing icons inline*/
+    width: 32px;
+    height: 32px;
+    padding: 0 10px;
+    /*space between icons*/
+}
+
+.social-icon {
+    font-size: 20px;
+}
+
+#social-menu .main-menu2 li .custom-icon {
+    color: #fff;
+    background: none;
+}
+
+#social-menu .main-menu2 li .custom-icon:hover {
+    background: none;
+}
+
+.icon-white {
+    color: #fff;
+}
+
+.custom-icon i:hover {
+    color: #f4b301;
+}
+
+.fai:hover {
+    color: #0083c9;
+}
+
+.gooi:hover {
+    color: #ce3c2d;
+}
+
+.insi:hover {
+    color: #ff6021;
+}
+
+.twiti:hover {
+    color: #5bbcec;
+}
+
+.linkin:hover {
+    color: #5bbcec;
+}
+
+
+#copyrightsscroll .container .row .col-md-12 p {
+    display: inline-block;
+}
+
+/*========================================
+                Navigation Bar
+=========================================*/
+
+.reg {
+    border: solid 1px;
+    color: #f4b301;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 8px 18px;
+    border-color: #f4b301;
+    background: none;
+    border-radius: 35px;
+    margin-left: 7px;
+    text-decoration-line: none;
+    letter-spacing: 1px;
+}
+
+.log {
+    border: solid 1px;
+    color: #f4b301;
+    font-size: 16px;
+    font-weight: 600;
+    display: inline-block;
+    padding: 8px 18px;
+    border-color: #f4b301;
+    background: none;
+    border-radius: 35px;
+    margin-left: 7px;
+    text-decoration-line: none;
+    letter-spacing: 1px;
+}
+
+#menu .main-menu li a img {
+    display: inline-block;
+    padding: 0px 8px 0px 0px;
+}
+
+.reg:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(243, 178, 1, .7);
+    border-color: rgba(243, 178, 1, .7);
+    text-decoration-line: none;
+}
+
+.log:hover {
+    color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(243, 178, 1, .7);
+    border-color: rgba(243, 178, 1, .7);
+    text-decoration-line: none;
+}
+
+#menu {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 330px;
+    display: inline-block;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+#social-menu {
+    vertical-align: middle;
+    text-align: center;
+    display: inline-block;
+    float: right;
+}
+
+.navbar-in {
+    /*navbar-in removed from html but works in place of nav-fixed-top here so that there is cleared transaparency while onload but while scrolling this code works i*/
+    background-color: rgba(0, 0, 0, 0.7);
+    /*change all properties smoothly*/
+    /*for transaparency */
+}
+
+.navbar {
+    transition: all .5s ease-in-out;
+    /*doesnt work nav tutorial 7 video */
+    padding: 8px 0px;
+}
+
+#menu .main-menu li a {
+    color: #fff;
+    background: none;
+}
+
+#menu .main-menu li a:hover {
+    color: #f4b301;
+    background: none;
+}
+
+.head-logo {
+    font-size: 20px;
+}
+
+#menu .main-menu li.active a {
+    color: #f4b301;
+}
+
+/*====================================================================
+                            Backtop footer
+======================================================================*/
+
+.btn-backtop {
+    display: none;
+    color: #f4b301;
+    border: solid 1px;
+    padding: 3px 10px;
+    float: right;
+    font-size: 25px;
+}
+
+.btn-backtop:hover {
+    background-color: #f4b301;
+    color: #fff;
+    border-color: #f4b301;
+}
+
+/*=================================================
+                    PARALLAX (Generic)
+==================================================*/
+
+
+/*bg=background-parallax for all images general*/
+
+.bg-parallax {
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*scaled,no space left,aligned center to center*/
+    background-position: center;
+    /*parallax effect(foreground runs fast than back image)*/
+    background-attachment: fixed;
+}
+
+/*=================================================
+                        ANIMATE
+==================================================*/
+
+
+/*for bg heading and heading 2*/
+
+#back-cover,
+#back-heading {
+    animation-duration: .5s;
+}
+
+#back-cover {
+    animation-delay: .1s;
+    /*completes within .5s for background image*/
+}
+
+#back-heading {
+    animation-delay: .5s;
+    /*completes within .5s for head 1 .5s late than bg*/
+}
+
+
+/*=======================================================================
+                            home back
+=========================================================================*/
+
+#bprojects {
+    height: 100%;
+}
+
+#back-cover {
+    background-image: url("../img/Backrgound%20images/binary.jpg");
+    height: 100%;
+}
+
+#back-content-box {
+    width: 100%;
+    /* 100% of its div container*/
+    height: 100%;
+    display: table;
+    background-color: rgba(0, 0, 0, .5);
+    /*act like table*/
+}
+
+#back-content-box-inner {
+    display: table-cell;
+    /*table data*/
+    vertical-align: middle;
+    /*text-align: center;  ALIGNED;THIS PROPERTY USED WITH ITS ID IN ITS ABOVE  DIV;horizontal*/
+}
+
+#back-heading h3 {
+    color: #fff;
+    font-size: 55px;
+    font-weight: 700;
+    /*width n thickness*/
+    margin: 20px 0px 20px 0px;
+    /*set top right bottom left*/
+    text-transform: capitalize;
+    /*For uppercase*/
+}
+
+#back-heading h3 span {
+    font-size: 40px;
+    font-weight: 700i;
+}
+
+
+/*=================================================
+        Project name and Tags(Generic)
+==================================================*/
+
+h4.project-title {
+    color: #41464b;
+    letter-spacing: 1px;
+    font-size: 18px;
+    padding-top: 2px;
+    font-weight: 600;
+}
+
+h5.project-tags {
+    color: #41464b;
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    margin-top: 5px;
+    letter-spacing: 1px;
+}
+
+.row {
+    margin: 20px 0;
+}
+
+/*=================================================
+                        PROJECTS
+==================================================*/
+
+.project-content {
+    cursor: pointer;
+}
+
+.project-info {
+    padding: 10px 0 10px 0;
+}
+
+.project-image {
+    overflow: hidden;
+    /*image zoom exceeds limit so exceed within box*/
+}
+
+.project-image img {
+    /*transition changes a value to another using scaling smoothly*/
+    transition: transform ease .5s;
+}
+
+.project-image img:hover {
+    /*change size of image zoom*/
+    transform: scale(1.2);
+    cursor: zoom-in;
+}
+
+/*==================================== 
+            centered product images
+======================================*/
+.fix-image {
+    width: 200px;
+    height: 150px;
+    margin: 0 auto;
+
+}
+
+/*=================================================
+                        CONTENT BOX(Generic)
+==================================================*/
+
+.content-box {
+    padding: 60px 0 0 0;
+    /*For space betweeen sections*/
+}
+
+.content-title h3 {
+    color: #41464b;
+    font-size: 26px;
+    /*30*/
+    font-weight: 700;
+    text-align: center;
+    /*align heading to center*/
+    margin: 0 0 20px 0;
+    text-transform: uppercase;
+    /*space between heading and images*/
+}
+
+.content-title h3 span {
+    color: #41464b;
+    font-size: 15px;
+    font-weight: 400i;
+}
+
+.content-title-underline {
+    width: 30px;
+    height: 3px;
+    background-color: #f4b301;
+    margin: 0 auto 30px auto;
+    /*center align hr line*/
+    /*bottom:30px for space between images and hr line*/
+}
+
+.content-title-white h3 {
+    /*a class from team section for team head as white*/
+    color: #fff;
+}

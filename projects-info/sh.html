@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--title-->
+    <title>Smart Home | Portfolio</title>
+
+    <!--flaticon-web icon-->
+    <link rel="shortcut icon" href="../img/flaticon.png" />
+
+    <!--jquery js-->
+    <script src="js/jquery.js"></script>
+
+    <!--jQuery 2.2.3-->
+    <script src="../js/jquery-2.2.3.min.js"></script>
+
+    <script defer>
+        window.onload = function() {
+            $('#content').load("proj.html");
+        };
+    </script>
+    <style>
+        html,
+        body,
+        #content {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <!--defer will ensure scripts loaded in order but in this case it doesnt work
+    onload or query ready function or any other function didn't work
+    As a final resort, timer was set for dynamic loading of content after proj.html/css/js template is loaded.
+
+    proj.html executes after all tags are executed. Due to load function usage its necessary that onload function is used for all completion. THis just starts the execution but elements take time for loading
+    -->
+</body>
+<script defer>
+    setTimeout(function() {
+        var imageUrl = "../img/project%20images/sh.png";
+        $('#content #back-cover').css('background-image', 'url(' + imageUrl + ')');
+        $('#content #head-3').html("Smart Home");
+        $('#content #head-2').html("A system to simplify the handling of appliances for disabled and elderly people for security and efficiency purposes");
+        $('#content .project-title').html("Smart Home");
+        $('#content .proj-time').html("November 21, 2020");
+
+        $('#content #line1').html("We have developed a system similar to Amazon Alexa which accepts the input commands from a user using an Android-enabled application program. ");
+        $('#content #line2').html("The Android parses the string and sends the result to Raspberry Pi model over a Bluetooth connection, which then performs the task with respect to the predefined program commands associated with it. ");
+        $('#content #line3').html("This system doesn’t require an Internet access for functioning as it has offline compatibility. The system’s user-friendly simplicity and flexibility in handling is what makes it unconventional. ");
+        $('#content #line4').html("This system also provides reduced energy consumption by using predictive analysis, door lock security, intrusion detection, wide support of appliances and using HVAC(Heating, Ventilation, Air Conditioning) with sensors. ");
+        $('#content #line5').css("list-style", "none");
+
+        $('#content .p-image').attr("src", "../img/project images/sh.png");
+        $('#content .btn-git').attr("href", "https://github.com/shonil24/Smart-Home");
+        $('#content .btn-demo').attr("href", "#");
+    }, 1000);
+</script>
+
+</html>

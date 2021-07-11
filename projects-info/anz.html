@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--title-->
+    <title>WIL | Portfolio</title>
+
+    <!--flaticon-web icon-->
+    <link rel="shortcut icon" href="../img/flaticon.png" />
+
+    <!--jquery js-->
+    <script src="js/jquery.js"></script>
+
+    <!--jQuery 2.2.3-->
+    <script src="../js/jquery-2.2.3.min.js"></script>
+
+    <script defer>
+        window.onload = function() {
+            $('#content').load("proj.html");
+        };
+    </script>
+    <style>
+        html,
+        body,
+        #content {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <!--defer will ensure scripts loaded in order but in this case it doesnt work
+    onload or query ready function or any other function didn't work
+    As a final resort, timer was set for dynamic loading of content after proj.html/css/js template is loaded.
+
+    proj.html executes after all tags are executed. Due to load function usage its necessary that onload function is used for all completion. THis just starts the execution but elements take time for loading
+    -->
+</body>
+<script defer>
+    setTimeout(function() {
+        var imageUrl = "../img/project%20images/anz1.png";
+        $('#content #back-cover').css('background-image', 'url(' + imageUrl + ')');
+        $('#content #head-3').html("ANZ");
+        $('#content #head-2').html("Exploring the insights within the ANZ transaction data, model building and evaluation for prediction of future activities");
+        $('#content .project-title').html("ANZ");
+        $('#content .proj-time').html("December 20, 2020");
+
+        $('#content #line1').html("The data is sourced from ANZ which contains 3 months of transactions for 100 hypothetical customers. ");
+        $('#content #line2').html("Exploratory Data Analysis is performed by gathering some insights on this data. Customer with high balances, age groups and location are some of the insights explored within the data. ");
+        $('#content #line3').html("Predictive modelling and evaluation is done to predict future activities such as fraudulent transactions. ");
+        $('#content #line4').html("Lastly, going through all the visualizations and understanding the behavior of the customers, the ANZ team can take an informed decisions to drive their finances as well as increase the reach, support, safety and financial health of the customers. ");
+        $('#content #line5').css("list-style", "none");
+
+        $('#content .p-image').attr("src", "../img/project images/anz1.png");
+        $('#content .p-image').attr("href", "../img/project images/anz1.png");
+        $('#content .btn-git').attr("href", "https://github.com/shonil24/ANZ");
+        $('#content .btn-demo').attr("href", "#");
+    }, 1000);
+</script>
+
+</html>

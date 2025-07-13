@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
 
     <!--title-->
-    <title>WIL | Portfolio</title>
+    <title>Project</title>
 
     <!--flaticon-web icon-->
     <link rel="shortcut icon" href="../img/flaticon.png" />
@@ -44,19 +44,37 @@
     -->
 </body>
 <script defer>
-    setTimeout(function() {
+    setTimeout(function () {
         var imageUrl = "../img/project%20images/anz1.png";
         $('#content #back-cover').css('background-image', 'url(' + imageUrl + ')');
-        $('#content #head-3').html("ANZ");
-        $('#content #head-2').html("Exploring the insights within the ANZ transaction data, model building and evaluation for prediction of future activities");
-        $('#content .project-title').html("ANZ");
+        $('#content #head-3').html("ANZ Transaction Analytics");
+        $('#content #head-2').html("Predictive modeling and segmentation on real ANZ banking data to forecast behavior and personalize services.");
+        $('#content .project-title').html("ANZ Transaction Analytics");
         $('#content .proj-time').html("December 20, 2020");
 
-        $('#content #line1').html("The data is sourced from ANZ which contains 3 months of transactions for 100 hypothetical customers. ");
-        $('#content #line2').html("Exploratory Data Analysis is performed by gathering some insights on this data. Customer with high balances, age groups and location are some of the insights explored within the data. ");
-        $('#content #line3').html("Predictive modelling and evaluation is done to predict future activities such as fraudulent transactions. ");
-        $('#content #line4').html("Lastly, going through all the visualizations and understanding the behavior of the customers, the ANZ team can take an informed decisions to drive their finances as well as increase the reach, support, safety and financial health of the customers. ");
-        $('#content #line5').css("list-style", "none");
+        $('#content #line1').html(
+            "<b>Background –</b> This project was completed as part of the ANZ Forage Data Analyst Internship. It used a real-world styled dataset containing three months of banking transactions for 100 hypothetical customers."
+        );
+
+        $('#content #line2').html(
+            "<b>Problem Statement –</b> ANZ aimed to understand customer behavior, forecast future transactions, and improve personalization through customer segmentation and predictive analytics."
+        );
+
+        $('#content #line3').html(
+            "<b>Overview –</b> Using Python and SQL, I explored patterns in customer spending, modeled future behaviors, and created clusters to categorize customers for targeted engagement strategies."
+        );
+
+        $('#content #line4').html(
+            "<b>Methods –</b> Cleaned and categorized transaction data using Python. Built classification models to predict future activities. Applied clustering (K-Means) to segment customers based on transaction frequency and amount.<br>" +
+            "<b>Technologies Used –</b> Python, SQL, Pandas, Scikit-Learn, Seaborn, Matplotlib."
+        );
+
+        $('#content #line5').html(
+            "<b>Insights#1 – Spending Patterns:</b> Identified peak transaction days and popular spending categories such as groceries and travel.<br>" +
+            "<b>Insights#2 – Predictive Modeling:</b> Used historical data to predict future customer behaviors, including likely spend amounts and potential account activity trends.<br>" +
+            "<b>Insights#3 – Customer Segmentation:</b> Clustered customers into 4 behavioral groups, allowing for more personalized product offerings and service strategies.<br>" +
+            "<b>Conclusion –</b> The project demonstrated how banks like ANZ can use data to drive customer insights, reduce churn, and boost product alignment with customer needs."
+        );
 
         $('#content .p-image').attr("src", "../img/project images/anz1.png");
         $('#content .p-image').attr("href", "../img/project images/anz1.png");
@@ -64,5 +82,7 @@
         $('#content .btn-demo').attr("href", "../projects-info/demo/ANZ.html");
     }, 1000);
 </script>
+
+
 
 </html>

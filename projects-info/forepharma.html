@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--title-->
+    <title>Project</title>
+
+    <!--flaticon-web icon-->
+    <link rel="shortcut icon" href="../img/flaticon.png" />
+
+    <!--jquery js-->
+    <script src="js/jquery.js"></script>
+
+    <!--jQuery 2.2.3-->
+    <script src="../js/jquery-2.2.3.min.js"></script>
+
+    <script defer>
+        window.onload = function() {
+            $('#content').load("proj.html");
+        };
+    </script>
+    <style>
+        html,
+        body,
+        #content {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <!--defer will ensure scripts loaded in order but in this case it doesnt work
+    onload or query ready function or any other function didn't work
+    As a final resort, timer was set for dynamic loading of content after proj.html/css/js template is loaded.
+
+    proj.html executes after all tags are executed. Due to load function usage its necessary that onload function is used for all completion. THis just starts the execution but elements take time for loading
+    -->
+</body>
+<script defer>
+    setTimeout(function () {
+        var imageUrl = "../img/project%20images/fh.png";
+        $('#content #back-cover').css('background-image', 'url(' + imageUrl + ')');
+        $('#content #head-3').html("Foregitth Pharmaceuticals Dashboard");
+        $('#content #head-2').html("Power BI report analyzing revenue, sales, and product performance for a German pharmaceutical firm.");
+        $('#content .project-title').html("Foregitth Pharmaceuticals Dashboard");
+        $('#content .proj-time').html("April 15, 2024");
+
+        $('#content #line1').html(
+            "<b>Background –</b> Forggith Pharmaceuticals is a Germany-based pharmaceutical company specializing in essential medicines like analgesics, antiseptics, and mood stabilizers. This project is based on a structured case study template designed to simulate a real-world sales analysis using Power BI.<br>" +
+            "<b>Problem Statement –</b> The company required a data-driven solution to monitor sales performance, evaluate revenue by location and product class, assess employee targets, and identify underperforming regions or reps.<br>" +
+            "<b>Overview –</b> Built a dynamic Power BI dashboard that consolidates sales, volume, revenue, and performance metrics across products, regions, and employees. The solution enables leadership to identify trends, optimize targets, and boost operational efficiency."
+        );
+
+        $('#content #line2').html(
+            "<b>Data Modeling –</b> Implemented a star schema with a central FactSales table linked to dimension tables (Products, Customers, Employees, Date). Integrated a custom calendar table and created advanced DAX measures for revenue, MoM%, achievement %, and rank metrics."
+        );
+
+        $('#content #line3').html(
+            "<b>Insights#1 – Revenue by Product Class:</b> Analgesics led with $2.25B, followed by Antiseptics ($2.1B) and Mood Stabilizers ($1.94B). Antimalarials lagged at $1.4B.<br>" +
+            "<b>Insights#2 – Revenue by City:</b> Butzbach topped at $94M. Baesweiler and Cuxhaven followed, while Merzig recorded the lowest revenue.<br>" +
+            "<b>Insights#3 – MoM% Change Trends:</b> February and November had sharp growth (499%, 370%). April–September saw declines, suggesting seasonal or economic factors.<br>" +
+            "<b>Insights#4 – Top Sales Reps:</b> Abigail Thompson led with $929M in sales. Jimmy Grey and Sheila Stones followed. Alan Ray had the lowest revenue.<br>" +
+            "<b>Insights#5 – Target % vs Revenue:</b> Despite leading in revenue, Abigail achieved only 76.61% of her target. Anne hit 86.71%, showing target variance.<br>" +
+            "<b>Insights#6 – Volume Performance:</b> All reps exceeded their volume targets, indicating strong execution across the board.<br>" +
+            "<b>Insights#7 – High-Demand Products:</b> Ionclotide, Tetratanyl, and Sumanazole were top performers and most frequently ordered.<br>" +
+            "<b>Insights#8 – Regional Disparity:</b> Cities with low revenue may reflect poor outreach or low market demand and need targeted campaigns.<br>" +
+            "<b>Insights#9 – Drill-Through Enabled:</b> Dashboard supports click-through by city, rep, or product to view transaction-level data.<br>" +
+            "<b>Insights#10 – Profitability Variance:</b> Some high-selling items returned lower profit margins, possibly due to discounts or cost inefficiencies."
+        );
+
+        $('#content #line4').html(
+            "<b>Recommendations –</b> 1) Launch targeted campaigns and customer outreach in low-performing regions. 2) Conduct training sessions to share high-performing reps’ strategies company-wide."
+        );
+
+        $('#content #line5').css("list-style", "none");
+
+        $('#content .p-image').attr("src", "../img/project images/fh.png");
+        $('#content .p-image').attr("href", "../img/project images/fh.png");
+        $('#content .btn-git').attr("href", "#");
+        $('#content .btn-demo').attr("href", "#");
+    }, 1000);
+</script>
+
+</script>
+
+
+
+
+</html>

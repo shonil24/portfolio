@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <!--title-->
+    <title>WIL | Portfolio</title>
+
+    <!--flaticon-web icon-->
+    <link rel="shortcut icon" href="../img/flaticon.png" />
+
+    <!--jquery js-->
+    <script src="js/jquery.js"></script>
+
+    <!--jQuery 2.2.3-->
+    <script src="../js/jquery-2.2.3.min.js"></script>
+
+    <script defer>
+        window.onload = function() {
+            $('#content').load("proj.html");
+        };
+    </script>
+    <style>
+        html,
+        body,
+        #content {
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="content"></div>
+
+    <!--defer will ensure scripts loaded in order but in this case it doesnt work
+    onload or query ready function or any other function didn't work
+    As a final resort, timer was set for dynamic loading of content after proj.html/css/js template is loaded.
+
+    proj.html executes after all tags are executed. Due to load function usage its necessary that onload function is used for all completion. THis just starts the execution but elements take time for loading
+    -->
+</body>
+<script defer>
+    setTimeout(function() {
+        var imageUrl = "../img/project%20images/ts.png";
+        $('#content #back-cover').css('background-image', 'url(' + imageUrl + ')');
+        $('#content #head-3').html("Forecasting");
+        $('#content #head-2').html("Forecasting the next 12 months on Yearly Expenditure of Eating Out in Australia");
+        $('#content .project-title').html("Forecasting");
+        $('#content .proj-time').html("June 14, 2021");
+
+        $('#content #line1').html("The time series dataset gives the total monthly expenditure of australian people on cafes, restaurants, and takeaway food services in billion dollars from April 2009 to September 2017. ");
+        $('#content #line2').html("In this group project, we investigated seasonal ARIMA model which allows us to model time series whose seasonal tendencies are not as regular as we would have with a deterministic model. We found trend and seasonality in time series, ACF and PACF plots which confirmed the non-stationarity. Through seasonal and non-seasonal differencing we eliminated the seasonality and trend except for 2 or 3 significant lags. ADF and Shapiro Wilk test were used to verify the stationarity and normality of Cafe Time Series. ");
+        $('#content #line3').html("Further, we derived some possible models from EACF. Parameter estimation for model fitting was performed to determine the best model from coefficient results. AIC and BIC were used to verify the optimal model for overfitting. ");
+        $('#content #line4').html("Then, residual analysis as a last step was used to diagnose the fitted model, followed by which forecasting with best model parameters was done. Forecasting showed a linear upwards trend and seasonality as expected.");
+        $('#content #line5').css("list-style", "none");
+
+        $('#content .p-image').attr("src", "../img/project images/ts.png");
+        $('#content .p-image').attr("href", "../img/project images/ts.png");
+        $('#content .btn-git').attr("href", "https://github.com/shonil24/Time-Series");
+        $('#content .btn-demo').attr("href", "#");
+    }, 1000);
+</script>
+
+</html>

@@ -378,13 +378,21 @@ h5.project-tags {
     transform: scale(1.2);
     cursor: zoom-in;
 }
+.container {
+    width: 100%;
+    /*full width*/
+    max-width: 1400px;
+    /*max width of container*/
+    margin: 0 auto;
+    /*center align*/
+}
 
 /*==================================== 
             centered product images
 ======================================*/
 .fix-image {
-    width: 200px;
-    height: 150px;
+    width: 400px;
+    height: 260px;
     margin: 0 auto;
 
 }

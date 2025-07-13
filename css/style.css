@@ -286,6 +286,26 @@ h5.project-tags {
     cursor: zoom-in;
 }
 
+.container {
+    width: 100%;
+    /*full width*/
+    max-width: 1400px;
+    /*max width of container*/
+    margin: 0 auto;
+    /*center align*/
+}
+
+/*==================================== 
+            centered product images
+======================================*/
+.fix-image {
+    width: 400px;
+    height: 260px;
+    margin: 0 auto;
+
+}
+
+
 /*--------------------------------
    Start About Me
 ----------------------------------*/
@@ -340,7 +360,7 @@ h5.project-tags {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 20px;
-    width: 70%;
+    width: 50%;
     -webkit-filter: grayscale(100%);
     -moz-filter: grayscale(100%);
     -ms-filter: grayscale(100%);
@@ -354,7 +374,7 @@ h5.project-tags {
 }
 
 .about-me-images img:hover {
-    width: 70%;
+    width: 50%;
     -webkit-filter: grayscale(0%);
     -moz-filter: grayscale(0%);
     -ms-filter: grayscale(0%);
@@ -365,16 +385,6 @@ h5.project-tags {
 /*--------------------------------
    End About Me
 ----------------------------------*/
-
-/*==================================== 
-            centered product images
-======================================*/
-.fix-image {
-    width: 200px;
-    height: 150px;
-    margin: 0 auto;
-
-}
 
 /*=================================================
                     WHOLE FOOTER
@@ -591,7 +601,7 @@ div.skills-heading {
     margin-top: 1em;
     margin-bottom: 0 !important;
     color: #6f6f6f;
-    padding-left: 45px;
+    padding-left: 150px;
 }
 
 .subheading {
@@ -602,18 +612,30 @@ div.skills-heading {
 }
 
 .list-inline-item {
-    display: block;
-    list-style-type: disc;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
+    display: inline-flex; /* ✅ inline so it stays next to others, flex for icon + text */
+    align-items: center;  /* ✅ vertically align icon + text */
+    gap: 0.4rem;           /* ✅ space between icon and text */
+    list-style: none;      /* ✅ remove bullet points */
+    
+    margin: 0.4rem 1rem 0.4rem 0; /* ✅ spacing between items */
     color: #868e96;
     font-family: 'Open Sans', serif;
     font-size: 17px;
-    padding-left: 12px;
+    
+    max-width: 100%;         /* ✅ prevent overflow */
+    word-break: break-word;  /* ✅ wrap long items */
+    white-space: normal;     /* ✅ allow line wrapping */
 }
+.skillpack {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 180px;
+    padding-right: 150px;  /* ✅ Add this line */
+    margin-top: 0.5em;
+    margin-bottom: 1.5em;
+    gap: 0.3rem 1.5rem;
+}
+
 
 .list-inline-item:not(:last-child) {
     margin-right: .5rem;
